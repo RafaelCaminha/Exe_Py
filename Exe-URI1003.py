@@ -1,0 +1,14 @@
+A = None
+B = None
+
+def read_numeric():
+    try:
+        return int(raw_input())
+    except NameError:
+        return int(input())
+
+A = read_numeric()
+B = read_numeric()
+SOMA = A+B
+
+print(str("SOMA = ") + str(SOMA))
